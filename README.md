@@ -11,3 +11,8 @@ User Register/login -->    Product's API                    Cart API            
 Payment API               Order's API 
 .api/payment/checkout     .api/order/confrim
 .api/payment/verify       .api/order/confrim/all
+
+
+
+
+<!-- https://mernprojectecommerce-5.onrender.com -->
