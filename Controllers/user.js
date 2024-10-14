@@ -16,7 +16,7 @@ const register = async(req,res)=>{
         
         let newUser = new userModel({name,email,password:hashedPass})
         await newUser.save()
-        res.status(201).json({message:"newUser created sucessfully",newUser,sucess:true})
+        res.status(201).json({message:"newUser created sucessfully",newUser,success:true})
     } catch (error) {
         res.status(401).json({messgae:"error occurs while creating user",error})
         console.log(error);
@@ -30,7 +30,7 @@ const login = async(req,res)=>{
     try {
         let findUser = await userModel.findOne({email})
         if(!findUser){
-           return res.json({message:"User not Found...please register first",sucess:false})
+           return res.json({message:"User not Found...please register first",success:false})
         }
 
         // if user present than check password match
