@@ -9,6 +9,8 @@ import Register from './Components/user/Register'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Login from './Components/user/Login'
+import Profile from './Components/user/Profile'
+import Cart from './Components/Cart'
 
 
 
@@ -25,6 +27,9 @@ const App = () => {
           <Route path='/product/:id' element={<ProductDetails/>}/>
           <Route path='/register' element={<Register/>}/>
           <Route path='/login' element={<Login/>}/>
+          <Route path='/profile' element={<Profile/>}/>
+          <Route path='/cart' element={<Cart/>}/>
+
       </Routes>
     </Router>
     </>

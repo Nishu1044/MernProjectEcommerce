@@ -7,12 +7,12 @@ const ProductDetails = () => {
   const [product, setProduct] = useState()
   const {id} = useParams()
 
-  const url = 'https://mernprojectecommerce-6.onrender.com'
+  const url = 'http://localhost:8484/api'
  
   // when ever my browser reload my want to fetch all the data--> for that useEffect help
   useEffect(()=>{
    const fetchedProduct = async () =>{
-    const api = await axios.get(`${url}/api/product/${id}`,{
+    const api = await axios.get(`${url}/product/${id}`,{
       headers:{
         "Content-Type":"Application/json"
       },
