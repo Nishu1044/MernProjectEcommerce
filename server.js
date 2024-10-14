@@ -14,7 +14,7 @@ const PORT = process.env.PORT || 1000
 
 
 app.use(cors({
-    origin:'https://mern-project-ecommerce-8pl7szmxq-nishu1044s-projects.vercel.app',
+    origin:'http://localhost:5173',
     methods:["GET","POST","PUT","DELETE"],
     credentials:true
 }))
