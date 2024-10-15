@@ -34,7 +34,7 @@ const login = async(req,res)=>{
         }
 
         // if user present than check password match
-        const isValidPass = bcrypt.compare(password, findUser.password)
+        const isValidPass = await bcrypt.compare(password, findUser.password)
         if(!isValidPass) return res.json({message:"Invalid Credential"})
 
 
