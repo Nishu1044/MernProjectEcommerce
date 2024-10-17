@@ -7,7 +7,7 @@ const ProductDetails = () => {
   const [product, setProduct] = useState()
   const {id} = useParams()
 
-  const url = 'https://mernprojectecommerce-7.onrender.com/api'
+  const url = 'https://mernprojectecommerce-9.onrender.com/api'
  
   // when ever my browser reload my want to fetch all the data--> for that useEffect help
   useEffect(()=>{
