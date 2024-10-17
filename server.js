@@ -13,11 +13,7 @@ const app = express()
 const PORT = process.env.PORT || 1000
 
 
-app.use(cors({
-    origin:'http://localhost:5173',
-    methods:["GET","POST","PUT","DELETE"],
-    credentials:true
-}))
+app.use(cors())
 
 // HOME testing routes
 app.get("/",(req,res)=>res.json({msg:"this is home route"}))
